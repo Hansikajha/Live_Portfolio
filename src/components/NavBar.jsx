@@ -61,7 +61,7 @@ export default function NavBar() {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl blur opacity-30 group-hover:opacity-50 transition duration-300"></div>
             </div>
             <span className="ml-3 text-xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
-              Alex Johnson
+              Hansika Jha
             </span>
           </Link>
 
