@@ -56,7 +56,7 @@ export default function NavBar() {
           >
             <div className="relative">
               <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-                <span className="text-white font-bold text-lg">AJ</span>
+                <span className="text-white font-bold text-lg">HJ</span>
               </div>
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl blur opacity-30 group-hover:opacity-50 transition duration-300"></div>
             </div>

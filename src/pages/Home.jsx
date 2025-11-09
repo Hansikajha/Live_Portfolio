@@ -26,8 +26,8 @@ export default function Home() {
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full opacity-20 group-hover:opacity-30 blur-lg transition-all duration-300"></div>
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80"
-                alt="Alex Johnson"
+                src="/img/DP.jpg"
+                alt="Hansika Jha"
                 className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-xl relative z-10"
               />
               <div className="absolute bottom-2 right-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white p-2 rounded-full shadow-lg z-20">
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Hi, I'm <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Alex Johnson</span>
+            Hi, I'm <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Hansika Jha</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-6 font-light">
             Frontend Developer & React Specialist
@@ -232,7 +232,7 @@ export default function Home() {
               Want the full story?
             </h3>
             <a
-              href="/Alex_Johnson_CV.pdf"
+              href="/Hansika_Jha_CV.pdf"
               download
               className="inline-flex items-center gap-3 px-8 py-4 bg-gray-900 text-white rounded-xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold text-lg group"
             >

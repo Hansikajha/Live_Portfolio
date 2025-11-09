@@ -11,10 +11,10 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-lg">AJ</span>
+                <span className="text-white font-bold text-lg">HJ</span>
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                Alex Johnson
+                Hansika Jha
               </span>
             </div>
             <p className="text-gray-300 text-lg leading-relaxed max-w-md">
@@ -126,7 +126,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} Alex Johnson. All rights reserved.
+              &copy; {new Date().getFullYear()} Hansika Jha. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center space-x-6 text-sm">
               {[
