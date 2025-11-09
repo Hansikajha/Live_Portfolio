@@ -84,10 +84,13 @@ export default function Footer() {
             <div className="space-y-4">
               <h3 className="text-lg font-bold text-white mb-4">Contact</h3>
               <div className="space-y-3 text-gray-300 dark:text-gray-400">
-                <div className="flex items-start space-x-3 group hover:text-white transition-colors duration-300">
+                <a 
+                  href="mailto:hansikajha6@gmail.com"
+                  className="flex items-start space-x-3 group hover:text-white transition-colors duration-300"
+                >
                   <FaEnvelope className="mt-1 text-blue-400 flex-shrink-0" />
                   <span>hansikajha6@gmail.com</span>
-                </div>
+                </a>
                 <div className="flex items-start space-x-3 group hover:text-white transition-colors duration-300">
                   <FaPhone className="mt-1 text-green-400 flex-shrink-0" />
                   <span>9840418327</span>
