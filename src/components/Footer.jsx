@@ -47,7 +47,7 @@ export default function Footer() {
                 <FaTwitter className="text-xl text-gray-300 group-hover:text-white" />
               </a>
               <a 
-                href="mailto:alex.johnson@example.com"
+                href="mailto:hansikajha6@gmail.com"
                 className="bg-gray-800 dark:bg-gray-700 p-3 rounded-xl hover:bg-gray-700 dark:hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg group"
               >
                 <FaEnvelope className="text-xl text-gray-300 group-hover:text-white" />
@@ -86,15 +86,15 @@ export default function Footer() {
               <div className="space-y-3 text-gray-300 dark:text-gray-400">
                 <div className="flex items-start space-x-3 group hover:text-white transition-colors duration-300">
                   <FaEnvelope className="mt-1 text-blue-400 flex-shrink-0" />
-                  <span>alex.johnson@example.com</span>
+                  <span>hansikajha6@gmail.com</span>
                 </div>
                 <div className="flex items-start space-x-3 group hover:text-white transition-colors duration-300">
                   <FaPhone className="mt-1 text-green-400 flex-shrink-0" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>9840418327</span>
                 </div>
                 <div className="flex items-start space-x-3 group hover:text-white transition-colors duration-300">
                   <FaMapMarkerAlt className="mt-1 text-red-400 flex-shrink-0" />
-                  <span>New York, NY</span>
+                  <span>Kathmandu, Nrepthate</span>
                 </div>
               </div>
             </div>

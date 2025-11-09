@@ -37,19 +37,19 @@ export default function Contact() {
     {
       icon: <MdEmail className="text-2xl" />,
       title: "Email",
-      value: "alex.johnson@example.com",
-      link: "mailto:alex.johnson@example.com"
+      value: "hansikajha6@gmail.com",
+      link: "mailto:hansikajha6@gmail.com"
     },
     {
       icon: <MdPhone className="text-2xl" />,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "9840418327",
+      link: "tel:+9779840418327"
     },
     {
       icon: <MdLocationOn className="text-2xl" />,
       title: "Location",
-      value: "New York, NY",
+      value: "Kathmandu, Nrepthate",
       link: "#"
     }
   ];
