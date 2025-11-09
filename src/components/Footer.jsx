@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaMapMarkerAlt, FaPhone } 
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+    <footer className="bg-gradient-to-br from-gray-900 to-gray-800 dark:from-gray-950 dark:to-gray-900 text-white">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
@@ -26,7 +26,7 @@ export default function Footer() {
                 href="https://github.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-gray-800 p-3 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg group"
+                className="bg-gray-800 dark:bg-gray-700 p-3 rounded-xl hover:bg-gray-700 dark:hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg group"
               >
                 <FaGithub className="text-xl text-gray-300 group-hover:text-white" />
               </a>
@@ -34,7 +34,7 @@ export default function Footer() {
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-gray-800 p-3 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg group"
+                className="bg-gray-800 dark:bg-gray-700 p-3 rounded-xl hover:bg-gray-700 dark:hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg group"
               >
                 <FaLinkedin className="text-xl text-gray-300 group-hover:text-white" />
               </a>
@@ -42,13 +42,13 @@ export default function Footer() {
                 href="https://twitter.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-gray-800 p-3 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg group"
+                className="bg-gray-800 dark:bg-gray-700 p-3 rounded-xl hover:bg-gray-700 dark:hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg group"
               >
                 <FaTwitter className="text-xl text-gray-300 group-hover:text-white" />
               </a>
               <a 
                 href="mailto:alex.johnson@example.com"
-                className="bg-gray-800 p-3 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg group"
+                className="bg-gray-800 dark:bg-gray-700 p-3 rounded-xl hover:bg-gray-700 dark:hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg group"
               >
                 <FaEnvelope className="text-xl text-gray-300 group-hover:text-white" />
               </a>
@@ -70,7 +70,7 @@ export default function Footer() {
                   <li key={link.path}>
                     <Link 
                       to={link.path}
-                      className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group"
+                      className="text-gray-300 dark:text-gray-400 hover:text-white transition-all duration-300 flex items-center group"
                     >
                       <span className="w-2 h-2 bg-blue-500 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                       {link.label}
@@ -83,7 +83,7 @@ export default function Footer() {
             {/* Contact Info */}
             <div className="space-y-4">
               <h3 className="text-lg font-bold text-white mb-4">Contact</h3>
-              <div className="space-y-3 text-gray-300">
+              <div className="space-y-3 text-gray-300 dark:text-gray-400">
                 <div className="flex items-start space-x-3 group hover:text-white transition-colors duration-300">
                   <FaEnvelope className="mt-1 text-blue-400 flex-shrink-0" />
                   <span>alex.johnson@example.com</span>
@@ -102,14 +102,14 @@ export default function Footer() {
             {/* Newsletter */}
             <div className="space-y-4">
               <h3 className="text-lg font-bold text-white mb-4">Stay Updated</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">
+              <p className="text-gray-300 dark:text-gray-400 text-sm leading-relaxed">
                 Get the latest updates on my projects and tech insights.
               </p>
               <form className="space-y-3">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                  className="w-full px-4 py-3 bg-gray-800 dark:bg-gray-700 border border-gray-700 dark:border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
                 />
                 <button
                   type="submit"
@@ -125,7 +125,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 dark:text-gray-500 text-sm">
               &copy; {new Date().getFullYear()} Hansika Jha. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center space-x-6 text-sm">
@@ -137,7 +137,7 @@ export default function Footer() {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                  className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors duration-300"
                 >
                   {link.label}
                 </Link>

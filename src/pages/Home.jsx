@@ -18,7 +18,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50/30 py-8 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50/30 dark:from-gray-900 dark:to-gray-800 py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
         <section className="text-center mb-20 mt-8">
@@ -28,7 +28,7 @@ export default function Home() {
               <img
                 src="/img/DP.jpg"
                 alt="Hansika Jha"
-                className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-xl relative z-10"
+                className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white dark:border-gray-700 shadow-xl relative z-10"
               />
               <div className="absolute bottom-2 right-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white p-2 rounded-full shadow-lg z-20">
                 <MdCode className="text-xl" />
@@ -36,14 +36,13 @@ export default function Home() {
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Hi, I'm <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Hansika Jha</span>
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
             Hi, I'm <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Hansika Jha</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-6 font-light">
+          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 font-light">
             Frontend Developer & React Specialist
           </p>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
             I craft beautiful, responsive web applications with modern technologies. 
             Passionate about creating intuitive user experiences and clean, maintainable code.
           </p>
@@ -51,9 +50,9 @@ export default function Home() {
 
         {/* About Section */}
         <section className="mb-20">
-          <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-sm border border-gray-100 p-8 md:p-12 hover:shadow-xl transition-all duration-500">
+          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-3xl shadow-sm border border-gray-100 dark:border-gray-700 p-8 md:p-12 hover:shadow-xl transition-all duration-500">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
                 About Me
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
@@ -89,16 +88,16 @@ export default function Home() {
                 />
               </div>
 
-              <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border border-blue-100">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-6">Quick Stats</h3>
+              <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-700 dark:to-gray-600 rounded-2xl p-8 border border-blue-100 dark:border-gray-600">
+                <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">Quick Stats</h3>
                 <div className="grid grid-cols-2 gap-6">
                   <StatCard number="3+" label="Years Experience" />
                   <StatCard number="50+" label="Projects Completed" />
                   <StatCard number="10k+" label="Code Commits" />
                   <StatCard number="5+" label="Open Source Projects" />
                 </div>
-                <div className="mt-8 p-4 bg-white rounded-xl border border-gray-200">
-                  <p className="text-gray-700 text-sm italic">
+                <div className="mt-8 p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-600">
+                  <p className="text-gray-700 dark:text-gray-300 text-sm italic">
                     "Passionate about creating digital experiences that make a difference. 
                     Always learning, always building."
                   </p>
@@ -111,10 +110,10 @@ export default function Home() {
         {/* Skills Section */}
         <section className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Skills & Technologies
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Technologies I use to bring ideas to life
             </p>
           </div>
@@ -166,9 +165,9 @@ export default function Home() {
         {/* Qualifications */}
         <section className="mb-20">
           <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl p-1 shadow-xl">
-            <div className="bg-white rounded-2xl p-8 md:p-12">
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
                   Qualifications
                 </h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
@@ -228,14 +227,14 @@ export default function Home() {
 
         {/* Download CV */}
         <section className="text-center">
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-700">
+            <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
               Want the full story?
             </h3>
             <a
               href="/Hansika_Jha_CV.pdf"
               download
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gray-900 text-white rounded-xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold text-lg group"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gray-900 dark:bg-gray-700 text-white rounded-xl hover:bg-gray-800 dark:hover:bg-gray-600 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold text-lg group"
             >
               <MdDownload className="text-xl group-hover:animate-bounce" />
               Download Full CV
@@ -249,15 +248,15 @@ export default function Home() {
 
 function ExperienceCard({ icon, iconBg, title, company, period, description }) {
   return (
-    <div className="flex items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 group hover:border-blue-200">
+    <div className="flex items-start p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 dark:border-gray-700 group hover:border-blue-200 dark:hover:border-blue-600">
       <div className={`p-3 rounded-2xl ${iconBg} mr-4 flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
         {icon}
       </div>
       <div className="flex-1">
-        <h3 className="font-bold text-gray-900 text-lg mb-1">{title}</h3>
-        <p className="text-blue-600 font-medium mb-1">{company}</p>
-        <p className="text-gray-500 text-sm mb-3">{period}</p>
-        <p className="text-gray-700 leading-relaxed">{description}</p>
+        <h3 className="font-bold text-gray-900 dark:text-white text-lg mb-1">{title}</h3>
+        <p className="text-blue-600 dark:text-blue-400 font-medium mb-1">{company}</p>
+        <p className="text-gray-500 dark:text-gray-400 text-sm mb-3">{period}</p>
+        <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{description}</p>
       </div>
     </div>
   );
@@ -265,12 +264,12 @@ function ExperienceCard({ icon, iconBg, title, company, period, description }) {
 
 function SkillCard({ icon, name, level }) {
   return (
-    <div className="flex flex-col items-center p-6 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 group hover:border-blue-200">
+    <div className="flex flex-col items-center p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 group hover:border-blue-200 dark:hover:border-blue-600">
       <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
         {icon}
       </div>
-      <span className="text-gray-900 font-semibold text-center mb-2">{name}</span>
-      <span className="text-xs text-blue-600 font-medium bg-blue-50 px-2 py-1 rounded-full">
+      <span className="text-gray-900 dark:text-white font-semibold text-center mb-2">{name}</span>
+      <span className="text-xs text-blue-600 dark:text-blue-400 font-medium bg-blue-50 dark:bg-blue-900/30 px-2 py-1 rounded-full">
         {level}
       </span>
     </div>
@@ -280,8 +279,8 @@ function SkillCard({ icon, name, level }) {
 function StatCard({ number, label }) {
   return (
     <div className="text-center p-4">
-      <div className="text-2xl font-bold text-gray-900 mb-1">{number}</div>
-      <div className="text-sm text-gray-600">{label}</div>
+      <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">{number}</div>
+      <div className="text-sm text-gray-600 dark:text-gray-300">{label}</div>
     </div>
   );
 }
@@ -289,7 +288,7 @@ function StatCard({ number, label }) {
 function QualificationSection({ title, items }) {
   return (
     <div>
-      <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center md:text-left">
+      <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center md:text-left">
         {title}
       </h3>
       <ul className="space-y-4">
@@ -298,7 +297,7 @@ function QualificationSection({ title, items }) {
             <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-1 rounded-full mr-4 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
               <div className="w-2 h-2 bg-white rounded-full"></div>
             </div>
-            <span className="text-gray-700 text-lg leading-relaxed group-hover:text-gray-900 transition-colors duration-300">
+            <span className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
               {item}
             </span>
           </li>

@@ -61,13 +61,13 @@ function Projects() {
   const getStatusColor = (status) => {
     switch (status) {
       case "Completed":
-        return "bg-green-100 text-green-800";
+        return "bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300";
       case "In Progress":
-        return "bg-blue-100 text-blue-800";
+        return "bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300";
       case "Planning":
-        return "bg-yellow-100 text-yellow-800";
+        return "bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300";
       default:
-        return "bg-gray-100 text-gray-800";
+        return "bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300";
     }
   };
 
@@ -77,8 +77,8 @@ function Projects() {
       
       {/* Header Section */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold mb-4 text-gray-900">Our Projects</h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Our Projects</h2>
+        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           Explore our portfolio of innovative projects and creative solutions
         </p>
       </div>
@@ -88,7 +88,7 @@ function Projects() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-all duration-300 flex flex-col group"
+            className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-all duration-300 flex flex-col group"
           >
             {/* Project Image */}
             <div className="relative overflow-hidden">
@@ -107,27 +107,27 @@ function Projects() {
             {/* Project Content */}
             <div className="p-6 flex-1 flex flex-col">
               <div className="mb-3">
-                <span className="text-sm font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded">
+                <span className="text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 px-2 py-1 rounded">
                   {project.category}
                 </span>
               </div>
               
-              <h3 className="text-xl font-semibold text-gray-900 mb-3 line-clamp-1">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3 line-clamp-1">
                 {project.title}
               </h3>
               
-              <p className="text-gray-600 text-sm mb-6 line-clamp-3 flex-1">
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-6 line-clamp-3 flex-1">
                 {project.description}
               </p>
 
               <div className="flex items-center justify-between mt-auto">
                 <button
                   onClick={() => handleViewDetails(project)}
-                  className="px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors duration-200 text-sm font-medium"
+                  className="px-4 py-2 bg-gray-900 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors duration-200 text-sm font-medium"
                 >
                   View Details
                 </button>
-                <span className="text-xs text-gray-500">Project #{project.id}</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400">Project #{project.id}</span>
               </div>
             </div>
           </div>
@@ -136,8 +136,8 @@ function Projects() {
 
       {/* Call to Action */}
       <div className="text-center mt-16">
-        <p className="text-gray-600 mb-6">Interested in working together?</p>
-        <button className="px-8 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors duration-200 font-medium">
+        <p className="text-gray-600 dark:text-gray-300 mb-6">Interested in working together?</p>
+        <button className="px-8 py-3 bg-black dark:bg-gray-700 text-white rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors duration-200 font-medium">
           Start a Project
         </button>
       </div>

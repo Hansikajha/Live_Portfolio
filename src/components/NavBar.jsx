@@ -3,7 +3,14 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    // Check localStorage first, then system preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      return savedTheme === 'dark';
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+  });
   const [isScrolled, setIsScrolled] = useState(false);
 
   const location = useLocation();
@@ -11,7 +18,12 @@ export default function NavBar() {
   // Function to check active link
   const isActive = (path) => location.pathname === path;
 
-  const toggleTheme = () => setIsDark(!isDark);
+  const toggleTheme = () => {
+    const newTheme = !isDark;
+    setIsDark(newTheme);
+    localStorage.setItem('theme', newTheme ? 'dark' : 'light');
+  };
+  
   const toggleMenu = () => setIsOpen(!isOpen);
 
   // Scroll effect for navbar
@@ -23,7 +35,7 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Apply theme to document
+  // Apply theme to document on mount and when theme changes
   useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add("dark");
@@ -31,6 +43,19 @@ export default function NavBar() {
       document.documentElement.classList.remove("dark");
     }
   }, [isDark]);
+
+  // Apply theme immediately on mount to prevent flash
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const shouldBeDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+    
+    if (shouldBeDark) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
 
   const navItems = [
     { path: "/", label: "Home" },
