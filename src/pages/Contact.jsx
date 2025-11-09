@@ -58,13 +58,13 @@ export default function Contact() {
     {
       icon: <FaLinkedin className="text-xl" />,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/alexjohnson",
+      url: "https://www.linkedin.com/in/hansika-jha-17b994227",
       color: "hover:text-blue-600"
     },
     {
       icon: <FaGithub className="text-xl" />,
       name: "GitHub",
-      url: "https://github.com/alexjohnson",
+      url: "https://github.com/Hansikajha",
       color: "hover:text-gray-800"
     },
     {

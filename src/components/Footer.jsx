@@ -23,7 +23,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/Hansikajha" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gray-800 dark:bg-gray-700 p-3 rounded-xl hover:bg-gray-700 dark:hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg group"
@@ -31,7 +31,7 @@ export default function Footer() {
                 <FaGithub className="text-xl text-gray-300 group-hover:text-white" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/hansika-jha-17b994227" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gray-800 dark:bg-gray-700 p-3 rounded-xl hover:bg-gray-700 dark:hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg group"
