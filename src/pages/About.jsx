@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCode, FaServer, FaMobileAlt, FaGitAlt, FaDatabase } from "react-icons/fa";
-import { SiTailwindcss, SiDjango, SiReact } from "react-icons/si";
+import { SiTailwindcss, SiDjango, SiReact, SiFigma } from "react-icons/si";
 
 export default function About() {
   return (
@@ -13,24 +13,23 @@ export default function About() {
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Full Stack Developer passionate about creating digital solutions that make a difference
+            React Developer passionate about creating digital solutions that make a difference
           </p>
         </div>
 
         {/* Main Content */}
         <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-3xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
-          
+
           {/* Introduction */}
           <div className="p-8 md:p-12 border-b border-gray-100 dark:border-gray-700">
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                Hello! I'm a passionate developer with expertise in both frontend and backend technologies. 
+                Hello! I'm a passionate developer with expertise in frontend technologies.
                 I specialize in building modern, performant web applications that deliver exceptional user experiences.
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                With 3+ years of professional experience, I've helped startups and enterprises transform 
-                their ideas into scalable digital products. I believe in clean code, thoughtful architecture, 
-                and continuous learning.
+                As a frontend developer, I'm passionate about turning ideas into simple, responsive, and user-friendly web designs.
+                I focus on writing clean code, learning new technologies, and growing my skills with every project.
               </p>
             </div>
           </div>
@@ -41,30 +40,24 @@ export default function About() {
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Skills & Expertise</h2>
               <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <SkillCard 
-                icon={<SiReact className="text-3xl text-cyan-500" />} 
-                title="Frontend Development" 
-                skills={["React.js", "Tailwind CSS", "JavaScript/ES6+", "Responsive Design"]} 
+              <SkillCard
+                icon={<SiReact className="text-3xl text-cyan-500" />}
+                title="Frontend Development"
+                skills={["React.js", "Tailwind CSS", "JavaScript/ES6+", "Responsive Design"]}
                 gradient="from-cyan-50 to-blue-50"
               />
-              <SkillCard 
-                icon={<FaServer className="text-3xl text-green-500" />} 
-                title="Backend Development" 
-                skills={["Django", "Python", "REST APIs", "Authentication"]} 
-                gradient="from-green-50 to-emerald-50"
+              <SkillCard
+                icon={<SiFigma className="text-3xl text-pink-500" />}
+                title="UI/UX Design"
+                skills={["Figma", "Adobe XD", "Wireframing", "Prototyping", "User Research"]}
+                gradient="from-pink-50 to-rose-50"
               />
-              <SkillCard 
-                icon={<FaDatabase className="text-3xl text-purple-500" />} 
-                title="Database" 
-                skills={["PostgreSQL", "MongoDB", "Firebase", "ORM"]} 
-                gradient="from-purple-50 to-violet-50"
-              />
-              <SkillCard 
-                icon={<FaGitAlt className="text-3xl text-orange-500" />} 
-                title="Tools & DevOps" 
-                skills={["Git/GitHub", "Docker", "CI/CD", "AWS Basics"]} 
+              <SkillCard
+                icon={<FaGitAlt className="text-3xl text-orange-500" />}
+                title="Tools & DevOps"
+                skills={["Git", "GitHub"]}
                 gradient="from-orange-50 to-amber-50"
               />
             </div>
@@ -76,26 +69,26 @@ export default function About() {
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Professional Journey</h2>
               <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
             </div>
-            
+
             <div className="space-y-8 max-w-3xl mx-auto">
-              <ExperienceItem 
-                role="Senior Frontend Developer" 
-                company="TechSolutions Inc." 
-                duration="2021 - Present" 
+              <ExperienceItem
+                role="Senior Frontend Developer"
+                company="TechSolutions Inc."
+                duration="2021 - Present"
                 description="Leading React development for enterprise applications, mentoring junior developers, and improving application performance."
                 year="2021"
               />
-              <ExperienceItem 
-                role="Full Stack Developer" 
-                company="DigitalAgency LLC" 
-                duration="2019 - 2021" 
+              <ExperienceItem
+                role="Full Stack Developer"
+                company="DigitalAgency LLC"
+                duration="2019 - 2021"
                 description="Built and maintained client websites using Django and React, implemented RESTful APIs, and optimized database queries."
                 year="2019"
               />
-              <ExperienceItem 
-                role="Web Developer Intern" 
-                company="StartUp Ventures" 
-                duration="2018 - 2019" 
+              <ExperienceItem
+                role="Web Developer Intern"
+                company="StartUp Ventures"
+                duration="2018 - 2019"
                 description="Assisted in developing web applications, fixed bugs, and contributed to UI improvements."
                 year="2018"
               />
@@ -108,7 +101,7 @@ export default function About() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Education</h2>
               <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
             </div>
-            
+
             <div className="max-w-2xl mx-auto">
               <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-700 dark:to-gray-600 rounded-2xl p-8 border border-blue-100 dark:border-gray-600">
                 <div className="flex items-start gap-4">
@@ -116,11 +109,11 @@ export default function About() {
                     <FaCode className="text-2xl text-blue-500" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">BSc in Computer Science</h3>
-                    <p className="text-gray-600 dark:text-gray-300 font-medium">State University</p>
-                    <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">2015 - 2019 • Graduated with Honors</p>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">B.E. in Software Engineering</h3>
+                    <p className="text-gray-600 dark:text-gray-300 font-medium">Pokhara University</p>
+                    <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">2019 - 2024 • Graduated with Honors</p>
                     <p className="text-gray-700 dark:text-gray-300 mt-3">
-                      Specialized in Web Technologies and Software Engineering. 
+                      Specialized in Web Technologies and Software Engineering.
                       Focused on modern web development practices and user experience design.
                     </p>
                   </div>
@@ -166,7 +159,7 @@ function ExperienceItem({ role, company, duration, description, year }) {
           {year}
         </div>
       </div>
-      
+
       {/* Content */}
       <div className="flex-1 bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300 group-hover:border-blue-200 dark:group-hover:border-blue-600">
         <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-3">

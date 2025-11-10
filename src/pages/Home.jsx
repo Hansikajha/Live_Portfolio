@@ -63,19 +63,19 @@ export default function Home() {
                 <ExperienceCard
                   icon={<MdWork className="text-blue-600 text-2xl" />}
                   iconBg="bg-blue-50"
-                  title="Senior Frontend Developer"
+                  title="Frontend Developer"
                   company="TechCorp Inc."
-                  period="2021 - Present • 3 years"
-                  description="Leading React development for enterprise applications with 500k+ users."
+                  period="2025 - Present"
+                  description="Passionate React development."
                 />
                 
                 <ExperienceCard
                   icon={<MdSchool className="text-green-600 text-2xl" />}
                   iconBg="bg-green-50"
-                  title="BSc Computer Science"
-                  company="State University"
-                  period="2017 - 2021 • Graduated with Honors"
-                  description="Specialized in Human-Computer Interaction and Web Technologies."
+                  title=" B.E. in Software Engineering "
+                  company="Pokhara University"
+                  period="2019 - 2024 • Graduated with Honors"
+                  description="Specialized in Software Engineering and Web Technologies."
                 />
                 
                 <ExperienceCard
@@ -84,17 +84,17 @@ export default function Home() {
                   title="Open Source Contributor"
                   company="Various Projects"
                   period="2020 - Present"
-                  description="Contributed to React libraries with 10k+ weekly downloads."
+                  description="Contributed to React libraries."
                 />
               </div>
 
               <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-700 dark:to-gray-600 rounded-2xl p-8 border border-blue-100 dark:border-gray-600">
                 <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">Quick Stats</h3>
                 <div className="grid grid-cols-2 gap-6">
-                  <StatCard number="3+" label="Years Experience" />
-                  <StatCard number="50+" label="Projects Completed" />
-                  <StatCard number="10k+" label="Code Commits" />
-                  <StatCard number="5+" label="Open Source Projects" />
+                  <StatCard number="1+" label="Years Experience" />
+                  <StatCard number="5" label="Projects Completed" />
+                  <StatCard number="5" label="Code Commits" />
+                  <StatCard number="2" label="Open Source Projects" />
                 </div>
                 <div className="mt-8 p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-600">
                   <p className="text-gray-700 dark:text-gray-300 text-sm italic">
@@ -140,11 +140,6 @@ export default function Home() {
               level="Advanced"
             />
             <SkillCard
-              icon={<FaNodeJs className="text-green-600 text-3xl" />}
-              name="Node.js"
-              level="Intermediate"
-            />
-            <SkillCard
               icon={<SiTailwindcss className="text-cyan-400 text-3xl" />}
               name="Tailwind"
               level="Expert"
@@ -152,7 +147,7 @@ export default function Home() {
             <SkillCard
               icon={<FaGitAlt className="text-orange-600 text-3xl" />}
               name="Git"
-              level="Advanced"
+              level="Intermediate"
             />
             <SkillCard
               icon={<FaFigma className="text-purple-500 text-3xl" />}
@@ -177,18 +172,18 @@ export default function Home() {
                 <QualificationSection
                   title="Education"
                   items={[
-                    "BSc in Computer Science, State University (2017-2021)",
-                    "Advanced React Certification (2022)",
+                    " B.E. in Software Engineering, Pokhara University (2019-2024)",
+                    " React Certification (2025)",
                     "UI/UX Design Specialization"
                   ]}
                 />
                 <QualificationSection
                   title="Experience"
                   items={[
-                    "3+ years frontend development",
-                    "Led 5+ successful projects",
+                    "1 year frontend development",
+                    "Led 5 projects",
                     "Web performance optimization",
-                    "Team leadership & mentoring"
+                    "Creative thinking & teamwork"
                   ]}
                 />
               </div>
