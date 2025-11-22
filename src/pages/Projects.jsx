@@ -72,7 +72,9 @@ function Projects() {
   };
 
   return (
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
     <div className="max-w-7xl mx-auto my-12 px-4 mt-20">
+      
       <ToastContainer position="top-right" autoClose={3000} />
       
       {/* Header Section */}
@@ -141,6 +143,7 @@ function Projects() {
           Start a Project
         </button>
       </div>
+    </div>
     </div>
   );
 }

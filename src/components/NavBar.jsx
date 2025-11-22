@@ -64,6 +64,8 @@ export default function NavBar() {
     { path: "/contact", label: "Contact" },
   ];
 
+  
+
   return (
     <nav
       className={`fixed w-full top-0 left-0 z-50 transition-all duration-500 ${
