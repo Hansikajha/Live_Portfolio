@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Light mode background */
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+/* Dark mode background */
+.dark body {
+  @apply bg-gray-900 text-gray-100;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

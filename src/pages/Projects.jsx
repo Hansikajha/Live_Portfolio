@@ -77,6 +77,7 @@ function Projects() {
       
       <ToastContainer position="top-right" autoClose={3000} />
       
+      
       {/* Header Section */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Our Projects</h2>
